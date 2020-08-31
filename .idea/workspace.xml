@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="52088040-1314-4371-bde2-1784b7fe0fd3" name="默认的" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="2" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:\IntelliJ IDEA 2019.3.3\plugins\maven\lib\maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1grUPhkz6JC33CF9YLgHlz7Y4Gy" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="项目" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="jill" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.SimpleTest.select">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SimpleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ssm-model-jill" />
+      <option name="PACKAGE_NAME" value="jill" />
+      <option name="MAIN_CLASS_NAME" value="jill.SimpleTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SimpleTest.select" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ssm-model-jill" />
+      <option name="PACKAGE_NAME" value="jill" />
+      <option name="MAIN_CLASS_NAME" value="jill.SimpleTest" />
+      <option name="METHOD_NAME" value="select" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="ssm-model-jill" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="jill.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="jill.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.SimpleTest.select" />
+        <item itemvalue="JUnit.SimpleTest" />
+        <item itemvalue="Spring Boot.Application" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="52088040-1314-4371-bde2-1784b7fe0fd3" name="默认的" comment="" />
+      <created>1598872186796</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1598872186796</updated>
+      <workItem from="1598872187831" duration="1331000" />
+      <workItem from="1598876827281" duration="1353000" />
+      <workItem from="1598878223780" duration="2187000" />
+      <workItem from="1598880449116" duration="53000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="290" y="115" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1598878076534">
+      <screen x="0" y="0" width="1466" height="864" />
+    </state>
+    <state x="290" y="115" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1466.864@0.0.1466.864" timestamp="1598878076534" />
+    <state x="507" y="305" width="457" height="273" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1598880084929">
+      <screen x="0" y="0" width="1466" height="864" />
+    </state>
+    <state x="507" y="305" width="457" height="273" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1466.864@0.0.1466.864" timestamp="1598880084929" />
+    <state x="428" y="9" key="#项目结构" timestamp="1598879100246">
+      <screen x="0" y="0" width="1466" height="864" />
+    </state>
+    <state x="428" y="9" key="#项目结构/0.0.1466.864@0.0.1466.864" timestamp="1598879100246" />
+    <state x="517" y="179" key="FileChooserDialogImpl" timestamp="1598880409481">
+      <screen x="0" y="0" width="1466" height="864" />
+    </state>
+    <state x="517" y="179" key="FileChooserDialogImpl/0.0.1466.864@0.0.1466.864" timestamp="1598880409481" />
+    <state x="622" y="335" width="228" height="280" key="Github.ShareDialog" timestamp="1598880466167">
+      <screen x="0" y="0" width="1466" height="864" />
+    </state>
+    <state x="622" y="335" width="228" height="280" key="Github.ShareDialog/0.0.1466.864@0.0.1466.864" timestamp="1598880466167" />
+    <state width="1408" height="221" key="GridCell.Tab.0.bottom" timestamp="1598880424455">
+      <screen x="0" y="0" width="1466" height="864" />
+    </state>
+    <state width="1408" height="221" key="GridCell.Tab.0.bottom/0.0.1466.864@0.0.1466.864" timestamp="1598880424455" />
+    <state width="1408" height="221" key="GridCell.Tab.0.center" timestamp="1598880424455">
+      <screen x="0" y="0" width="1466" height="864" />
+    </state>
+    <state width="1408" height="221" key="GridCell.Tab.0.center/0.0.1466.864@0.0.1466.864" timestamp="1598880424455" />
+    <state width="1408" height="221" key="GridCell.Tab.0.left" timestamp="1598880424455">
+      <screen x="0" y="0" width="1466" height="864" />
+    </state>
+    <state width="1408" height="221" key="GridCell.Tab.0.left/0.0.1466.864@0.0.1466.864" timestamp="1598880424455" />
+    <state width="1408" height="221" key="GridCell.Tab.0.right" timestamp="1598880424455">
+      <screen x="0" y="0" width="1466" height="864" />
+    </state>
+    <state width="1408" height="221" key="GridCell.Tab.0.right/0.0.1466.864@0.0.1466.864" timestamp="1598880424455" />
+    <state width="1408" height="221" key="GridCell.Tab.1.bottom" timestamp="1598879535113">
+      <screen x="0" y="0" width="1466" height="864" />
+    </state>
+    <state width="1408" height="221" key="GridCell.Tab.1.bottom/0.0.1466.864@0.0.1466.864" timestamp="1598879535113" />
+    <state width="1408" height="221" key="GridCell.Tab.1.center" timestamp="1598879535113">
+      <screen x="0" y="0" width="1466" height="864" />
+    </state>
+    <state width="1408" height="221" key="GridCell.Tab.1.center/0.0.1466.864@0.0.1466.864" timestamp="1598879535113" />
+    <state width="1408" height="221" key="GridCell.Tab.1.left" timestamp="1598879535113">
+      <screen x="0" y="0" width="1466" height="864" />
+    </state>
+    <state width="1408" height="221" key="GridCell.Tab.1.left/0.0.1466.864@0.0.1466.864" timestamp="1598879535113" />
+    <state width="1408" height="221" key="GridCell.Tab.1.right" timestamp="1598879535113">
+      <screen x="0" y="0" width="1466" height="864" />
+    </state>
+    <state width="1408" height="221" key="GridCell.Tab.1.right/0.0.1466.864@0.0.1466.864" timestamp="1598879535113" />
+    <state x="428" y="13" key="SettingsEditor" timestamp="1598880506592">
+      <screen x="0" y="0" width="1466" height="864" />
+    </state>
+    <state x="428" y="13" key="SettingsEditor/0.0.1466.864@0.0.1466.864" timestamp="1598880506592" />
+    <state x="750" y="262" width="368" height="337" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog" timestamp="1598879802915">
+      <screen x="0" y="0" width="1466" height="864" />
+    </state>
+    <state x="750" y="262" width="368" height="337" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog/0.0.1466.864@0.0.1466.864" timestamp="1598879802915" />
+    <state x="777" y="216" width="482" height="458" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1598880015942">
+      <screen x="0" y="0" width="1466" height="864" />
+    </state>
+    <state x="777" y="216" width="482" height="458" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1466.864@0.0.1466.864" timestamp="1598880015942" />
+    <state x="432" y="164" width="601" height="536" key="find.popup" timestamp="1598873161056">
+      <screen x="0" y="0" width="1466" height="864" />
+    </state>
+    <state x="432" y="164" width="601" height="536" key="find.popup/0.0.1466.864@0.0.1466.864" timestamp="1598873161056" />
+  </component>
+</project>
