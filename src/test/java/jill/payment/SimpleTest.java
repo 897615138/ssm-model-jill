@@ -1,4 +1,4 @@
-package jill;
+package jill.payment;
 
 import java.util.List;
 
@@ -9,8 +9,9 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.stereotype.Service;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import jill.dao.IUserMapper;
-import jill.entity.UserInfo;
+import jill.payment.entity.UserInfo;
+import jill.payment.mapper.UserInfoMapper;
+
 
 @Service
 @RunWith(SpringRunner.class)
@@ -18,7 +19,7 @@ import jill.entity.UserInfo;
 public class SimpleTest {
 
 @Autowired
-private IUserMapper iUserMapper;
+private UserInfoMapper iUserMapper;
 
     @Test
     public void select(){

@@ -12,7 +12,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
  * 启动类
  */
 @SpringBootApplication
-@MapperScan("jill.dao")
+@MapperScan("jill.payment.mapper")
 public class Application {
     @Bean
     public WebMvcConfigurer corsConfigurer() {
