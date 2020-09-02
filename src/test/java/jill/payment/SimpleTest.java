@@ -61,4 +61,14 @@ private IUserInfoService userInfoService;
         List<UserInfo> userName = userInfoService.list(queryWrapper.eq("user_phone","1"));
         System.out.println(userName);
     }
+
+    @Test
+    public void login() throws AppException {
+        QueryWrapper<UserInfo> queryWrapper=new QueryWrapper<>();
+        List<UserInfo> userName = userInfoService.list(
+                queryWrapper.eq("user_name","1").
+                        or().eq("user_email","1").
+                        or().eq("user_phone","233"));
+        System.out.println(userName);
+    }
 }
