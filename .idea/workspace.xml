@@ -13,8 +13,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="52088040-1314-4371-bde2-1784b7fe0fd3" name="默认的" comment="注册登录(密码加密)">
+    <list default="true" id="52088040-1314-4371-bde2-1784b7fe0fd3" name="默认的" comment="注册登录(提示跳转)">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9406a3dd-c47e-4d40-afd1-329a604afee0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/9406a3dd-c47e-4d40-afd1-329a604afee0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jill/util/result/ResultCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jill/util/result/ResultCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jill/util/result/ResultEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jill/util/result/ResultEntity.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,13 +85,28 @@
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.Application">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration name="CodeGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="jill.util.CodeGenerator" />
+      <module name="ssm-model-jill" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="jill.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -151,22 +170,6 @@
       <option name="PACKAGE_NAME" value="jill.payment" />
       <option name="MAIN_CLASS_NAME" value="jill.payment.SimpleTest" />
       <option name="METHOD_NAME" value="login" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SimpleTest.uuid" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ssm-model-jill" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="jill.payment.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="jill.payment" />
-      <option name="MAIN_CLASS_NAME" value="jill.payment.SimpleTest" />
-      <option name="METHOD_NAME" value="uuid" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -249,11 +252,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.CodeGenerator" />
         <item itemvalue="JUnit.SimpleTest.login" />
         <item itemvalue="JUnit.SimpleTest.checkPhone" />
         <item itemvalue="JUnit.SimpleTest.checkMail" />
         <item itemvalue="JUnit.SimpleTest.checkUserName" />
-        <item itemvalue="JUnit.SimpleTest.uuid" />
       </list>
     </recent_temporary>
   </component>
@@ -279,7 +282,8 @@
       <workItem from="1598940474927" duration="13845000" />
       <workItem from="1599007287452" duration="9297000" />
       <workItem from="1599025266704" duration="218000" />
-      <workItem from="1599025501070" duration="6828000" />
+      <workItem from="1599025501070" duration="7464000" />
+      <workItem from="1599116931686" duration="6637000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1598880671242</created>
@@ -330,7 +334,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599042180680</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="注册登录(提示跳转)">
+      <created>1599057613758</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1599057613758</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -356,7 +367,8 @@
     <MESSAGE value="注册基础完成(无重复验证)" />
     <MESSAGE value="注册基础完成(重复验证)" />
     <MESSAGE value="注册登录(密码加密)" />
-    <option name="LAST_COMMIT_MESSAGE" value="注册登录(密码加密)" />
+    <MESSAGE value="注册登录(提示跳转)" />
+    <option name="LAST_COMMIT_MESSAGE" value="注册登录(提示跳转)" />
   </component>
   <component name="WindowStateProjectService">
     <state x="107" y="255" key="#Notifications" timestamp="1598938533089">
@@ -419,54 +431,38 @@
       <screen x="0" y="0" width="1466" height="864" />
     </state>
     <state x="622" y="335" width="228" height="280" key="Github.ShareDialog/0.0.1466.864@0.0.1466.864" timestamp="1598881531654" />
-    <state width="709" height="278" key="GridCell.Tab.0.bottom" timestamp="1599042123302">
+    <state width="710" height="223" key="GridCell.Tab.0.bottom" timestamp="1599146744856">
       <screen x="0" y="0" width="1466" height="864" />
     </state>
-    <state width="709" height="278" key="GridCell.Tab.0.bottom/0.0.1466.864@0.0.1466.864" timestamp="1599042123302" />
-    <state width="709" height="278" key="GridCell.Tab.0.center" timestamp="1599042123302">
+    <state width="710" height="223" key="GridCell.Tab.0.bottom/0.0.1466.864@0.0.1466.864" timestamp="1599146744856" />
+    <state width="710" height="223" key="GridCell.Tab.0.center" timestamp="1599146744856">
       <screen x="0" y="0" width="1466" height="864" />
     </state>
-    <state width="709" height="278" key="GridCell.Tab.0.center/0.0.1466.864@0.0.1466.864" timestamp="1599042123302" />
-    <state width="709" height="278" key="GridCell.Tab.0.left" timestamp="1599042123302">
+    <state width="710" height="223" key="GridCell.Tab.0.center/0.0.1466.864@0.0.1466.864" timestamp="1599146744856" />
+    <state width="710" height="223" key="GridCell.Tab.0.left" timestamp="1599146744856">
       <screen x="0" y="0" width="1466" height="864" />
     </state>
-    <state width="709" height="278" key="GridCell.Tab.0.left/0.0.1466.864@0.0.1466.864" timestamp="1599042123302" />
-    <state width="709" height="278" key="GridCell.Tab.0.right" timestamp="1599042123302">
+    <state width="710" height="223" key="GridCell.Tab.0.left/0.0.1466.864@0.0.1466.864" timestamp="1599146744856" />
+    <state width="710" height="223" key="GridCell.Tab.0.right" timestamp="1599146744856">
       <screen x="0" y="0" width="1466" height="864" />
     </state>
-    <state width="709" height="278" key="GridCell.Tab.0.right/0.0.1466.864@0.0.1466.864" timestamp="1599042123302" />
-    <state width="0" height="0" key="GridCell.Tab.1.bottom" timestamp="1599042123236">
+    <state width="710" height="223" key="GridCell.Tab.0.right/0.0.1466.864@0.0.1466.864" timestamp="1599146744856" />
+    <state width="416" height="220" key="GridCell.Tab.1.bottom" timestamp="1599139101359">
       <screen x="0" y="0" width="1466" height="864" />
     </state>
-    <state width="0" height="0" key="GridCell.Tab.1.bottom/0.0.1466.864@0.0.1466.864" timestamp="1599042123236" />
-    <state width="0" height="0" key="GridCell.Tab.1.center" timestamp="1599042123236">
+    <state width="416" height="220" key="GridCell.Tab.1.bottom/0.0.1466.864@0.0.1466.864" timestamp="1599139101359" />
+    <state width="416" height="220" key="GridCell.Tab.1.center" timestamp="1599139101359">
       <screen x="0" y="0" width="1466" height="864" />
     </state>
-    <state width="0" height="0" key="GridCell.Tab.1.center/0.0.1466.864@0.0.1466.864" timestamp="1599042123236" />
-    <state width="0" height="0" key="GridCell.Tab.1.left" timestamp="1599042123236">
+    <state width="416" height="220" key="GridCell.Tab.1.center/0.0.1466.864@0.0.1466.864" timestamp="1599139101359" />
+    <state width="416" height="220" key="GridCell.Tab.1.left" timestamp="1599139101359">
       <screen x="0" y="0" width="1466" height="864" />
     </state>
-    <state width="0" height="0" key="GridCell.Tab.1.left/0.0.1466.864@0.0.1466.864" timestamp="1599042123236" />
-    <state width="0" height="0" key="GridCell.Tab.1.right" timestamp="1599042123236">
+    <state width="416" height="220" key="GridCell.Tab.1.left/0.0.1466.864@0.0.1466.864" timestamp="1599139101359" />
+    <state width="416" height="220" key="GridCell.Tab.1.right" timestamp="1599139101359">
       <screen x="0" y="0" width="1466" height="864" />
     </state>
-    <state width="0" height="0" key="GridCell.Tab.1.right/0.0.1466.864@0.0.1466.864" timestamp="1599042123236" />
-    <state width="0" height="0" key="GridCell.Tab.2.bottom" timestamp="1599042123237">
-      <screen x="0" y="0" width="1466" height="864" />
-    </state>
-    <state width="0" height="0" key="GridCell.Tab.2.bottom/0.0.1466.864@0.0.1466.864" timestamp="1599042123237" />
-    <state width="0" height="0" key="GridCell.Tab.2.center" timestamp="1599042123236">
-      <screen x="0" y="0" width="1466" height="864" />
-    </state>
-    <state width="0" height="0" key="GridCell.Tab.2.center/0.0.1466.864@0.0.1466.864" timestamp="1599042123236" />
-    <state width="0" height="0" key="GridCell.Tab.2.left" timestamp="1599042123236">
-      <screen x="0" y="0" width="1466" height="864" />
-    </state>
-    <state width="0" height="0" key="GridCell.Tab.2.left/0.0.1466.864@0.0.1466.864" timestamp="1599042123236" />
-    <state width="0" height="0" key="GridCell.Tab.2.right" timestamp="1599042123236">
-      <screen x="0" y="0" width="1466" height="864" />
-    </state>
-    <state width="0" height="0" key="GridCell.Tab.2.right/0.0.1466.864@0.0.1466.864" timestamp="1599042123236" />
+    <state width="416" height="220" key="GridCell.Tab.1.right/0.0.1466.864@0.0.1466.864" timestamp="1599139101359" />
     <state x="220" y="166" key="IDE.errors.dialog" timestamp="1598938592539">
       <screen x="0" y="0" width="1466" height="864" />
     </state>
@@ -479,18 +475,22 @@
       <screen x="0" y="0" width="1466" height="864" />
     </state>
     <state x="428" y="13" key="SettingsEditor/0.0.1466.864@0.0.1466.864" timestamp="1598938866340" />
-    <state x="328" y="156" key="Vcs.Push.Dialog.v2" timestamp="1599042182219">
+    <state width="498" height="448" key="SwitcherDM" timestamp="1599146807088">
       <screen x="0" y="0" width="1466" height="864" />
     </state>
-    <state x="328" y="156" key="Vcs.Push.Dialog.v2/0.0.1466.864@0.0.1466.864" timestamp="1599042182219" />
+    <state width="498" height="448" key="SwitcherDM/0.0.1466.864@0.0.1466.864" timestamp="1599146807088" />
+    <state x="328" y="156" key="Vcs.Push.Dialog.v2" timestamp="1599057615224">
+      <screen x="0" y="0" width="1466" height="864" />
+    </state>
+    <state x="328" y="156" key="Vcs.Push.Dialog.v2/0.0.1466.864@0.0.1466.864" timestamp="1599057615224" />
     <state x="750" y="262" width="368" height="337" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog" timestamp="1598879802915">
       <screen x="0" y="0" width="1466" height="864" />
     </state>
     <state x="750" y="262" width="368" height="337" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog/0.0.1466.864@0.0.1466.864" timestamp="1598879802915" />
-    <state x="777" y="216" width="482" height="458" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1598970199866">
+    <state x="418" y="220" width="482" height="458" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1599139086589">
       <screen x="0" y="0" width="1466" height="864" />
     </state>
-    <state x="777" y="216" width="482" height="458" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1466.864@0.0.1466.864" timestamp="1598970199866" />
+    <state x="418" y="220" width="482" height="458" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1466.864@0.0.1466.864" timestamp="1599139086589" />
     <state x="549" y="350" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1598880994639">
       <screen x="0" y="0" width="1466" height="864" />
     </state>

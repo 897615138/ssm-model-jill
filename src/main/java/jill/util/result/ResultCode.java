@@ -34,7 +34,11 @@ public enum ResultCode implements IResponseEntity {
     NO_LOGON(1004, "登录错误,请重新登录"),
     SYSTEM_ERROR(9999, "当前网络忙，请稍后再试"),
     FAIL(4000, "业务失败"),
-
+    /**
+     * 商品
+     */
+    PRO_NONE(4007,"没有商品信息"),
+    PRO_LIST(1007,"获取商品信息成功")
 
     ;
 

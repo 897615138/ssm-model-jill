@@ -1,6 +1,7 @@
 package jill.util.result;
 
 import java.io.Serializable;
+import java.util.List;
 
 import lombok.Data;
 import lombok.ToString;
@@ -16,47 +17,29 @@ public class ResultEntity<T> implements Serializable {
     private boolean flag;// 业务执行是否成功
     private T data;// 返回数据
 
-    private ResultEntity(ResultCode resultCode, boolean flag, T data) {
-        this.code = resultCode.getResponseCode();
-        this.message = resultCode.getResponseMsg();
-        this.flag = flag;
-        this.data = data;
-    }
-
-    private ResultEntity(Integer code, String message, boolean flag, T data) {
-        this.code = code;
-        this.message = message;
-        this.flag = flag;
-        this.data = data;
-    }
-    private ResultEntity(ResultCode resultCode,boolean flag) {
-        this.code = resultCode.getResponseCode();
-        this.message = resultCode.getResponseMsg();
-        this.flag = flag;
-    }
-
     /**
      * 业务执行成功,有返回数据
      *
      * @param <T> 泛型
      * @return 返回
      */
-    public static <T> ResultEntity<T> SUCCESS(ResultCode resultCode) {
-        return new ResultEntity(resultCode, true);
+    public static <T> ResultEntity SUCCESS(ResultCode resultCode) {
+        ResultEntity<Object> resultEntity = new ResultEntity<>();
+        resultEntity.setCode(resultCode.getResponseCode());
+        resultEntity.setMessage(resultCode.getResponseMsg());
+        resultEntity.setFlag(true);
+        resultEntity.setData(EmptyObject.EMPTY);
+        return resultEntity;
     }
 
-    public static <T> ResultEntity<T> SUCCESS(ResultCode resultCode,T data) {
-        return new ResultEntity<>(resultCode, true, data);
+    public static <T> ResultEntity<Object> SUCCESS(ResultCode resultCode, T data) {
+        ResultEntity<Object> resultEntity = new ResultEntity<>();
+        resultEntity.setCode(resultCode.getResponseCode());
+        resultEntity.setMessage(resultCode.getResponseMsg());
+        resultEntity.setFlag(true);
+        resultEntity.setData(data);
+        return resultEntity;
     }
-    /**
-     * 业务执行成功,没有返回数据
-     *
-     * @return 返回
-     */
-    public static ResultEntity<EmptyObject> SUCCESS() {
-        return new ResultEntity<>(ResultCode.SUCCESS, true, EmptyObject.EMPTY);
-    }
-
     /**
      * 执行失败,有返回数据
      *
@@ -64,8 +47,13 @@ public class ResultEntity<T> implements Serializable {
      * @param <T> 泛型
      * @return 返回
      */
-    public static <T> ResultEntity<T> FAIL(T data) {
-        return new ResultEntity<>(ResultCode.FAIL, false, data);
+    public static <T> ResultEntity<Object> FAIL(T data) {
+        ResultEntity<Object> resultEntity = new ResultEntity<>();
+        resultEntity.setCode(ResultCode.FAIL.getResponseCode());
+        resultEntity.setMessage(ResultCode.FAIL.getResponseMsg());
+        resultEntity.setFlag(false);
+        resultEntity.setData(data);
+        return resultEntity;
     }
 
     /**
@@ -73,8 +61,13 @@ public class ResultEntity<T> implements Serializable {
      *
      * @return 返回
      */
-    public static ResultEntity<EmptyObject> FAIL() {
-        return new ResultEntity<>(ResultCode.FAIL, false, EmptyObject.EMPTY);
+    public static ResultEntity<Object> FAIL() {
+        ResultEntity<Object> resultEntity = new ResultEntity<>();
+        resultEntity.setCode(ResultCode.FAIL.getResponseCode());
+        resultEntity.setMessage(ResultCode.FAIL.getResponseMsg());
+        resultEntity.setFlag(false);
+        resultEntity.setData(EmptyObject.EMPTY);
+        return resultEntity;
     }
 
     /**
@@ -86,8 +79,13 @@ public class ResultEntity<T> implements Serializable {
      * @param <T> 泛型
      * @return 返回
      */
-    public static <T> ResultEntity<T> CUSTOM(ResultCode resultCode, boolean flag, T data) {
-        return new ResultEntity<>(resultCode, flag, data);
+    public static <T> ResultEntity<Object> CUSTOM(ResultCode resultCode, boolean flag, T data) {
+        ResultEntity<Object> resultEntity = new ResultEntity<>();
+        resultEntity.setCode(resultCode.getResponseCode());
+        resultEntity.setMessage(resultCode.getResponseMsg());
+        resultEntity.setFlag(flag);
+        resultEntity.setData(data);
+        return resultEntity;
     }
 
     /**
@@ -100,8 +98,13 @@ public class ResultEntity<T> implements Serializable {
      * @param <T> 泛型
      * @return 返回
      */
-    public static <T> ResultEntity<T> CUSTOM(Integer code, String message, boolean flag, T data) {
-        return new ResultEntity<>(code, message, flag, data);
+    public static <T> ResultEntity<Object> CUSTOM(Integer code, String message, boolean flag, T data) {
+        ResultEntity<Object> resultEntity = new ResultEntity<>();
+        resultEntity.setCode(code);
+        resultEntity.setMessage(message);
+        resultEntity.setFlag(flag);
+        resultEntity.setData(data);
+        return resultEntity;
     }
 
     /**
@@ -110,8 +113,13 @@ public class ResultEntity<T> implements Serializable {
      * @param <T> 泛型
      * @return 返回
      */
-    public static <T> ResultEntity<EmptyObject> SYS_ERROR(String message) {
-        return new ResultEntity<>(ResultCode.SYS_ERROR(message), false, EmptyObject.EMPTY);
+    public static <T> ResultEntity<Object> SYS_ERROR(String message) {
+        ResultEntity<Object> resultEntity = new ResultEntity<>();
+        resultEntity.setCode(ResultCode.SYS_ERROR(message).getResponseCode());
+        resultEntity.setMessage(ResultCode.SYS_ERROR(message).getResponseMsg());
+        resultEntity.setFlag(false);
+        resultEntity.setData(EmptyObject.EMPTY);
+        return resultEntity;
     }
 
     /**
@@ -119,7 +127,12 @@ public class ResultEntity<T> implements Serializable {
      * @param IResponseEntity 返回接口
      * @return 返回
      */
-    public static ResultEntity<EmptyObject> EXCEPTION(IResponseEntity IResponseEntity){
-        return new ResultEntity<>(IResponseEntity.getResponseCode(), IResponseEntity.getResponseMsg(),false,EmptyObject.EMPTY);
+    public static ResultEntity<Object> EXCEPTION(IResponseEntity IResponseEntity){
+        ResultEntity<Object> resultEntity = new ResultEntity<>();
+        resultEntity.setCode(IResponseEntity.getResponseCode());
+        resultEntity.setMessage(IResponseEntity.getResponseMsg());
+        resultEntity.setFlag(false);
+        resultEntity.setData(EmptyObject.EMPTY);
+        return resultEntity;
     }
 }
