@@ -20,4 +20,8 @@ public interface IProductInfoService extends IService<ProductInfo> {
     List<ProductInfo> getProList() throws AppException;
 
     void updatePro(ProductInfo productInfo) throws AppException;
+
+    void newPro(ProductInfo product)throws AppException;
+
+    void deletePro(ProductInfo product) throws AppException;
 }

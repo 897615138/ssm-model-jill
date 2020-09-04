@@ -1,6 +1,7 @@
 package jill.payment.service.impl;
 
 import java.util.List;
+import java.util.UUID;
 
 import jill.payment.entity.ProductInfo;
 import jill.payment.entity.UserInfo;
@@ -19,7 +20,7 @@ import org.springframework.stereotype.Service;
 
 /**
  * <p>
- *  服务实现类
+ * 服务实现类
  * </p>
  *
  * @author jill
@@ -28,26 +29,50 @@ import org.springframework.stereotype.Service;
 @Service
 public class ProductInfoServiceImpl extends ServiceImpl<ProductInfoMapper, ProductInfo> implements IProductInfoService {
     @Autowired
-    private IProductInfoService iProductInfoService;
+    private IProductInfoService productInfoService;
     @Autowired
     private PasswordEncoder passwordEncoder;
+
     @Override
     public List<ProductInfo> getProList() throws AppException {
-        List<ProductInfo> list = iProductInfoService.list();
-        if (list.size()==0){
+        List<ProductInfo> list = productInfoService.list();
+        if (list.size() == 0) {
             throw new AppException(ResultCode.PRO_NONE);
-        }else{
-        return list;}
+        } else {
+            return list;
+        }
     }
+
     @Override
-    public void updatePro(ProductInfo productInfo) throws AppException{
+    public void updatePro(ProductInfo productInfo) throws AppException {
         UpdateWrapper<ProductInfo> updateWrapper = new UpdateWrapper<>();
-        updateWrapper.eq("pro_id",productInfo.getProId())
+        updateWrapper.eq("pro_id", productInfo.getProId())
                 .set("pro_name", productInfo.getProName())
-                .set("user_id",productInfo.getUserId());
-        boolean pro_id = iProductInfoService.update(updateWrapper);
-        if (!pro_id){
+                .set("user_id", productInfo.getUserId());
+        boolean pro_id = productInfoService.update(updateWrapper);
+        if (!pro_id) {
             throw new AppException(ResultCode.UPDATE_PRO_FAIL);
+        }
+    }
+
+    @Override
+    public void newPro(ProductInfo product) throws AppException {
+        product.setProId(UUID.randomUUID().toString().replace("-", ""));
+        product.setProDelete(0);
+        boolean save = productInfoService.save(product);
+        if (!save) {
+            throw new AppException(ResultCode.CREATE_PRO_FAIL);
+        }
+    }
+
+    @Override
+    public void deletePro(ProductInfo product) throws AppException {
+        UpdateWrapper<ProductInfo> updateWrapper = new UpdateWrapper<>();
+        updateWrapper.eq("pro_id", product.getProId())
+                .set("pro_delete", 1);
+        boolean pro_id = productInfoService.update(updateWrapper);
+        if (!pro_id) {
+            throw new AppException(ResultCode.DELETE_PRO_FAIL);
         }
     }
 }

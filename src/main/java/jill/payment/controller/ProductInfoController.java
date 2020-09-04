@@ -54,5 +54,33 @@ public class ProductInfoController {
         System.out.println(resultEntity);
         return resultEntity;
     }
+    @RequestMapping("/pro/new")
+    public ResultEntity newPro(ProductInfo product){
+        ResultEntity resultEntity;
+        System.out.println(product);
+        try {
+            iProductInfoService.newPro(product);
+            resultEntity = ResultEntity.SUCCESS(ResultCode.CREATE_PRO);
+            System.out.println(resultEntity);
+        } catch (AppException e) {
+            resultEntity = ResultEntity.EXCEPTION(e);
+        }
+        System.out.println(resultEntity);
+        return resultEntity;
+    }
+    @RequestMapping("/pro/delete")
+    public ResultEntity deletePro(ProductInfo product){
+        ResultEntity resultEntity;
+        System.out.println(product);
+        try {
+            iProductInfoService.deletePro(product);
+            resultEntity = ResultEntity.SUCCESS(ResultCode.DELETE_PRO);
+            System.out.println(resultEntity);
+        } catch (AppException e) {
+            resultEntity = ResultEntity.EXCEPTION(e);
+        }
+        System.out.println(resultEntity);
+        return resultEntity;
+    }
 }
 

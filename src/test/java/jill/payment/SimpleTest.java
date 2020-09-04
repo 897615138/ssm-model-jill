@@ -97,5 +97,17 @@ private IProductInfoService productInfoService;
 //        lambdaUpdateWrapper.eq(User::getRealName, "shimin").set(User::getAge, 34);
 //
 //        Integer rows = userMapper.update(null, lambdaUpdateWrapper);
+
+
+    }
+    @Test
+    public void newPro() throws AppException{
+        ProductInfo productInfo = new ProductInfo();
+        productInfo.setProId("test");
+        productInfo.setProName("test");
+        productInfo.setUserId("f5f807652c514c82b9e2d42f43a10a71");
+        productInfo.setProDelete(0);
+        boolean save = productInfoService.save(productInfo);
+        System.out.println(save);
     }
 }

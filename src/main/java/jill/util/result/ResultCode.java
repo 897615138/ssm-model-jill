@@ -40,7 +40,11 @@ public enum ResultCode implements IResponseEntity {
     PRO_NONE(4007,"没有商品信息"),
     PRO_LIST(1007,"获取商品信息成功"),
     UPDATE_PRO_FAIL(4008,"更新商品失败"),
-    UPDATE_PRO(1008,"更新商品成功")
+    UPDATE_PRO(1008,"更新商品成功"),
+    CREATE_PRO(1009,"新建商品成功"),
+    CREATE_PRO_FAIL(4009,"新建商品失败"),
+    DELETE_PRO(1010,"商品删除成功"),
+    DELETE_PRO_FAIL(4010,"商品删除失败")
     ;
 
     private final Integer code;
