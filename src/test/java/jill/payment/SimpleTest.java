@@ -13,8 +13,12 @@ import org.springframework.stereotype.Service;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.baomidou.mybatisplus.core.conditions.update.LambdaUpdateWrapper;
+import com.baomidou.mybatisplus.core.conditions.update.UpdateWrapper;
 
+import jill.payment.entity.ProductInfo;
 import jill.payment.entity.UserInfo;
+import jill.payment.service.IProductInfoService;
 import jill.payment.service.IUserInfoService;
 import jill.util.exception.AppException;
 import jill.util.result.ResultCode;
@@ -27,6 +31,8 @@ public class SimpleTest {
 
 @Autowired
 private IUserInfoService userInfoService;
+@Autowired
+private IProductInfoService productInfoService;
 
     @Test
     public void select(){
@@ -70,5 +76,26 @@ private IUserInfoService userInfoService;
                         or().eq("user_email","1").
                         or().eq("user_phone","233"));
         System.out.println(userName);
+    }
+
+    @Test
+    public void proUpdate() throws AppException{
+        QueryWrapper<ProductInfo> queryWrapper=new QueryWrapper<>();
+        ProductInfo productInfo = new ProductInfo();
+        productInfo.setProId("1");
+        productInfo.setProName("test");
+       productInfo.setUserId("f5f807652c514c82b9e2d42f43a10a71");
+       productInfo.setProDelete(0);
+        UpdateWrapper<ProductInfo> updateWrapper = new UpdateWrapper<>();
+        updateWrapper.eq("pro_id","1").set("pro_name", "test").set("pro_delete",1);
+        boolean pro_id = productInfoService.update(updateWrapper);
+        System.out.println(pro_id);
+//        LambdaUpdateChainWrapper<User> lambdaUpdateChainWrapper = new LambdaUpdateChainWrapper<>(userMapper);
+//
+//        boolean update = lambdaUpdateChainWrapper.eq(User::getRealName, "shimin").set(User::getAge, 33).update();
+//        LambdaUpdateWrapper<User> lambdaUpdateWrapper = new LambdaUpdateWrapper<>();
+//        lambdaUpdateWrapper.eq(User::getRealName, "shimin").set(User::getAge, 34);
+//
+//        Integer rows = userMapper.update(null, lambdaUpdateWrapper);
     }
 }

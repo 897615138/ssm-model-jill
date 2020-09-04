@@ -38,8 +38,9 @@ public enum ResultCode implements IResponseEntity {
      * 商品
      */
     PRO_NONE(4007,"没有商品信息"),
-    PRO_LIST(1007,"获取商品信息成功")
-
+    PRO_LIST(1007,"获取商品信息成功"),
+    UPDATE_PRO_FAIL(4008,"更新商品失败"),
+    UPDATE_PRO(1008,"更新商品成功")
     ;
 
     private final Integer code;
