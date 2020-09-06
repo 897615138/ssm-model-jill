@@ -14,18 +14,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="52088040-1314-4371-bde2-1784b7fe0fd3" name="默认的" comment="商品更新">
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/jill/markdown/pageHelper.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/payment/UserInfoMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jill/payment/service/impl/MyWXPayDomain.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jill/config/MybatisPlusConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jill/config/MybatisPlusConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jill/payment/mapper/UserInfoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jill/payment/mapper/UserInfoMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jill/payment/service/impl/ProductInfoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jill/payment/service/impl/ProductInfoServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jill/config/MyWXPayConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jill/config/MyWXPayConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/jill/payment/SimpleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/jill/payment/SimpleTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,6 +76,9 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="jill.config" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="jill.payment" />
       <recent name="jill" />
@@ -302,7 +297,7 @@
       <workItem from="1599116931686" duration="6637000" />
       <workItem from="1599182651466" duration="11029000" />
       <workItem from="1599226159939" duration="6416000" />
-      <workItem from="1599354533673" duration="9396000" />
+      <workItem from="1599354533673" duration="13710000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1598880671242</created>
@@ -367,7 +362,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599231548832</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="商品更新">
+      <created>1599378088646</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1599378088646</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -423,10 +425,10 @@
       <screen x="0" y="0" width="1466" height="864" />
     </state>
     <state x="1145" y="232" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1466.864@0.0.1466.864" timestamp="1599025127519" />
-    <state x="539" y="137" key="#com.intellij.ide.util.MemberChooser" timestamp="1598971817056">
+    <state x="539" y="137" key="#com.intellij.ide.util.MemberChooser" timestamp="1599379355203">
       <screen x="0" y="0" width="1466" height="864" />
     </state>
-    <state x="539" y="137" key="#com.intellij.ide.util.MemberChooser/0.0.1466.864@0.0.1466.864" timestamp="1598971817056" />
+    <state x="539" y="137" key="#com.intellij.ide.util.MemberChooser/0.0.1466.864@0.0.1466.864" timestamp="1599379355203" />
     <state x="370" y="207" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1598938760177">
       <screen x="0" y="0" width="1466" height="864" />
     </state>
@@ -531,10 +533,10 @@
       <screen x="0" y="0" width="1466" height="864" />
     </state>
     <state width="498" height="448" key="SwitcherDM/0.0.1466.864@0.0.1466.864" timestamp="1599146807088" />
-    <state x="328" y="156" key="Vcs.Push.Dialog.v2" timestamp="1599231550862">
+    <state x="328" y="156" key="Vcs.Push.Dialog.v2" timestamp="1599378093801">
       <screen x="0" y="0" width="1466" height="864" />
     </state>
-    <state x="328" y="156" key="Vcs.Push.Dialog.v2/0.0.1466.864@0.0.1466.864" timestamp="1599231550862" />
+    <state x="328" y="156" key="Vcs.Push.Dialog.v2/0.0.1466.864@0.0.1466.864" timestamp="1599378093801" />
     <state x="750" y="262" width="368" height="337" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog" timestamp="1598879802915">
       <screen x="0" y="0" width="1466" height="864" />
     </state>
@@ -547,6 +549,10 @@
       <screen x="0" y="0" width="1466" height="864" />
     </state>
     <state x="549" y="350" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1466.864@0.0.1466.864" timestamp="1598880994639" />
+    <state x="962" y="266" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1599378175590">
+      <screen x="0" y="0" width="1466" height="864" />
+    </state>
+    <state x="962" y="266" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1466.864@0.0.1466.864" timestamp="1599378175590" />
     <state x="268" y="172" width="931" height="641" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1598937690498">
       <screen x="0" y="0" width="1466" height="864" />
     </state>

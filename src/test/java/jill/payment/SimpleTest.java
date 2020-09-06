@@ -13,7 +13,6 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.conditions.update.UpdateWrapper;
-import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 
 import jill.payment.entity.ProductInfo;
@@ -118,5 +117,9 @@ private IProductInfoService productInfoService;
 //        System.out.println(page);
         Page<Map<String, Object>> mapPage = productInfoService.pageMaps(new Page<>(2, 5));
         System.out.println(mapPage);
+    }
+    @Test
+    public void testWXPay(){
+
     }
 }
