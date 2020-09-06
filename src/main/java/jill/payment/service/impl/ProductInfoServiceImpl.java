@@ -3,20 +3,19 @@ package jill.payment.service.impl;
 import java.util.List;
 import java.util.UUID;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.stereotype.Service;
+
+import com.baomidou.mybatisplus.core.conditions.update.UpdateWrapper;
+import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+
 import jill.payment.entity.ProductInfo;
 import jill.payment.entity.UserInfo;
 import jill.payment.mapper.ProductInfoMapper;
 import jill.payment.service.IProductInfoService;
 import jill.util.exception.AppException;
 import jill.util.result.ResultCode;
-
-import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-import com.baomidou.mybatisplus.core.conditions.update.UpdateWrapper;
-import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.crypto.password.PasswordEncoder;
-import org.springframework.stereotype.Service;
 
 /**
  * <p>
@@ -57,8 +56,11 @@ public class ProductInfoServiceImpl extends ServiceImpl<ProductInfoMapper, Produ
 
     @Override
     public void newPro(ProductInfo product) throws AppException {
+        System.out.println(product);
         product.setProId(UUID.randomUUID().toString().replace("-", ""));
         product.setProDelete(0);
+        product.setUserId(product.getUserId());
+        product.setProName(product.getProName());
         boolean save = productInfoService.save(product);
         if (!save) {
             throw new AppException(ResultCode.CREATE_PRO_FAIL);

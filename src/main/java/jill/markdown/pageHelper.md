@@ -1,0 +1,7 @@
+依赖
+
+#pagehelper分页插件配置
+pagehelper.helperDialect=mysql
+pagehelper.reasonable=true
+pagehelper.supportMethodsArguments=true
+pagehelper.params=count=countSql

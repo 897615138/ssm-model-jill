@@ -14,12 +14,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="52088040-1314-4371-bde2-1784b7fe0fd3" name="默认的" comment="商品更新">
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jill/markdown/pageHelper.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/payment/UserInfoMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jill/payment/controller/ProductInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jill/payment/controller/ProductInfoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jill/payment/service/IProductInfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jill/payment/service/IProductInfoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jill/config/MybatisPlusConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jill/config/MybatisPlusConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jill/payment/mapper/UserInfoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jill/payment/mapper/UserInfoMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/jill/payment/service/impl/ProductInfoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jill/payment/service/impl/ProductInfoServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jill/util/result/ResultCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jill/util/result/ResultCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/jill/payment/SimpleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/jill/payment/SimpleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +76,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/jill/util" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/mapper/payment" />
     <property name="project.structure.last.edited" value="模块" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -78,42 +84,29 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\GitHub\ssm-model-jill\src\main\java\jill\payment\service" />
-      <recent name="E:\GitHub\ssm-model-jill\src\main\java\jill\payment\service\impl" />
-      <recent name="E:\GitHub\ssm-model-jill\src\main\java\jill\payment\controller" />
-    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="jill.payment" />
       <recent name="jill" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\GitHub\ssm-model-jill\src\main\resources\mapper\payment" />
       <recent name="E:\GitHub\ssm-model-jill\src\main\java\jill\util" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\GitHub\ssm-model-jill\src\main\java\jill" />
+      <recent name="E:\GitHub\ssm-model-jill\src\main\java\jill\payment\service" />
+      <recent name="E:\GitHub\ssm-model-jill\src\main\java\jill\payment\service\impl" />
+      <recent name="E:\GitHub\ssm-model-jill\src\main\java\jill\payment\controller" />
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.Application">
-    <configuration name="CodeGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="jill.util.CodeGenerator" />
-      <module name="ssm-model-jill" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="jill.util.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -161,6 +154,22 @@
       <option name="PACKAGE_NAME" value="jill.payment" />
       <option name="MAIN_CLASS_NAME" value="jill.payment.SimpleTest" />
       <option name="METHOD_NAME" value="newPro" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SimpleTest.pageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ssm-model-jill" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="jill.payment.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="jill.payment" />
+      <option name="MAIN_CLASS_NAME" value="jill.payment.SimpleTest" />
+      <option name="METHOD_NAME" value="pageTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -259,9 +268,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SimpleTest.newPro" />
+        <item itemvalue="JUnit.SimpleTest.pageTest" />
         <item itemvalue="JUnit.SimpleTest.proUpdate" />
-        <item itemvalue="应用程序.CodeGenerator" />
+        <item itemvalue="JUnit.SimpleTest.newPro" />
         <item itemvalue="JUnit.SimpleTest.login" />
         <item itemvalue="JUnit.SimpleTest.checkPhone" />
       </list>
@@ -293,6 +302,7 @@
       <workItem from="1599116931686" duration="6637000" />
       <workItem from="1599182651466" duration="11029000" />
       <workItem from="1599226159939" duration="6416000" />
+      <workItem from="1599354533673" duration="9396000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1598880671242</created>
@@ -397,6 +407,10 @@
       <screen x="0" y="0" width="1466" height="864" />
     </state>
     <state x="72" y="38" key="#Plugins/0.0.1466.864@0.0.1466.864" timestamp="1599025294806" />
+    <state x="328" y="273" key="#SQL_方言" timestamp="1599368867694">
+      <screen x="0" y="0" width="1466" height="864" />
+    </state>
+    <state x="328" y="273" key="#SQL_方言/0.0.1466.864@0.0.1466.864" timestamp="1599368867694" />
     <state x="611" y="345" key="#TomEE_Server" timestamp="1598882678989">
       <screen x="0" y="0" width="1466" height="864" />
     </state>
@@ -433,14 +447,14 @@
       <screen x="0" y="0" width="1466" height="864" />
     </state>
     <state x="464" y="178" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1466.864@0.0.1466.864" timestamp="1599198079203" />
-    <state x="360" y="110" key="#检查" timestamp="1599013828474">
+    <state x="360" y="110" key="#检查" timestamp="1599377658765">
       <screen x="0" y="0" width="1466" height="864" />
     </state>
-    <state x="360" y="110" key="#检查/0.0.1466.864@0.0.1466.864" timestamp="1599013828474" />
-    <state x="179" y="0" key="#项目结构" timestamp="1598883740563">
+    <state x="360" y="110" key="#检查/0.0.1466.864@0.0.1466.864" timestamp="1599377658765" />
+    <state x="179" y="0" key="#项目结构" timestamp="1599369784175">
       <screen x="0" y="0" width="1466" height="864" />
     </state>
-    <state x="179" y="0" key="#项目结构/0.0.1466.864@0.0.1466.864" timestamp="1598883740563" />
+    <state x="179" y="0" key="#项目结构/0.0.1466.864@0.0.1466.864" timestamp="1599369784175" />
     <state x="517" y="179" key="FileChooserDialogImpl" timestamp="1598882688250">
       <screen x="0" y="0" width="1466" height="864" />
     </state>
@@ -453,58 +467,58 @@
       <screen x="0" y="0" width="1466" height="864" />
     </state>
     <state x="622" y="335" width="228" height="280" key="Github.ShareDialog/0.0.1466.864@0.0.1466.864" timestamp="1598881531654" />
-    <state width="707" height="283" key="GridCell.Tab.0.bottom" timestamp="1599233560389">
+    <state width="706" height="279" key="GridCell.Tab.0.bottom" timestamp="1599377682229">
       <screen x="0" y="0" width="1466" height="864" />
     </state>
-    <state width="707" height="283" key="GridCell.Tab.0.bottom/0.0.1466.864@0.0.1466.864" timestamp="1599233560389" />
-    <state width="707" height="283" key="GridCell.Tab.0.center" timestamp="1599233560389">
+    <state width="706" height="279" key="GridCell.Tab.0.bottom/0.0.1466.864@0.0.1466.864" timestamp="1599377682229" />
+    <state width="706" height="279" key="GridCell.Tab.0.center" timestamp="1599377682229">
       <screen x="0" y="0" width="1466" height="864" />
     </state>
-    <state width="707" height="283" key="GridCell.Tab.0.center/0.0.1466.864@0.0.1466.864" timestamp="1599233560389" />
-    <state width="707" height="283" key="GridCell.Tab.0.left" timestamp="1599233560389">
+    <state width="706" height="279" key="GridCell.Tab.0.center/0.0.1466.864@0.0.1466.864" timestamp="1599377682229" />
+    <state width="706" height="279" key="GridCell.Tab.0.left" timestamp="1599377682228">
       <screen x="0" y="0" width="1466" height="864" />
     </state>
-    <state width="707" height="283" key="GridCell.Tab.0.left/0.0.1466.864@0.0.1466.864" timestamp="1599233560389" />
-    <state width="707" height="283" key="GridCell.Tab.0.right" timestamp="1599233560389">
+    <state width="706" height="279" key="GridCell.Tab.0.left/0.0.1466.864@0.0.1466.864" timestamp="1599377682228" />
+    <state width="706" height="279" key="GridCell.Tab.0.right" timestamp="1599377682229">
       <screen x="0" y="0" width="1466" height="864" />
     </state>
-    <state width="707" height="283" key="GridCell.Tab.0.right/0.0.1466.864@0.0.1466.864" timestamp="1599233560389" />
-    <state width="0" height="0" key="GridCell.Tab.1.bottom" timestamp="1599233560310">
+    <state width="706" height="279" key="GridCell.Tab.0.right/0.0.1466.864@0.0.1466.864" timestamp="1599377682229" />
+    <state width="706" height="279" key="GridCell.Tab.1.bottom" timestamp="1599377682230">
       <screen x="0" y="0" width="1466" height="864" />
     </state>
-    <state width="0" height="0" key="GridCell.Tab.1.bottom/0.0.1466.864@0.0.1466.864" timestamp="1599233560310" />
-    <state width="0" height="0" key="GridCell.Tab.1.center" timestamp="1599233560310">
+    <state width="706" height="279" key="GridCell.Tab.1.bottom/0.0.1466.864@0.0.1466.864" timestamp="1599377682230" />
+    <state width="706" height="279" key="GridCell.Tab.1.center" timestamp="1599377682229">
       <screen x="0" y="0" width="1466" height="864" />
     </state>
-    <state width="0" height="0" key="GridCell.Tab.1.center/0.0.1466.864@0.0.1466.864" timestamp="1599233560310" />
-    <state width="0" height="0" key="GridCell.Tab.1.left" timestamp="1599233560310">
+    <state width="706" height="279" key="GridCell.Tab.1.center/0.0.1466.864@0.0.1466.864" timestamp="1599377682229" />
+    <state width="706" height="279" key="GridCell.Tab.1.left" timestamp="1599377682229">
       <screen x="0" y="0" width="1466" height="864" />
     </state>
-    <state width="0" height="0" key="GridCell.Tab.1.left/0.0.1466.864@0.0.1466.864" timestamp="1599233560310" />
-    <state width="0" height="0" key="GridCell.Tab.1.right" timestamp="1599233560310">
+    <state width="706" height="279" key="GridCell.Tab.1.left/0.0.1466.864@0.0.1466.864" timestamp="1599377682229" />
+    <state width="706" height="279" key="GridCell.Tab.1.right" timestamp="1599377682229">
       <screen x="0" y="0" width="1466" height="864" />
     </state>
-    <state width="0" height="0" key="GridCell.Tab.1.right/0.0.1466.864@0.0.1466.864" timestamp="1599233560310" />
-    <state width="0" height="0" key="GridCell.Tab.2.bottom" timestamp="1599233560311">
+    <state width="706" height="279" key="GridCell.Tab.1.right/0.0.1466.864@0.0.1466.864" timestamp="1599377682229" />
+    <state width="706" height="279" key="GridCell.Tab.2.bottom" timestamp="1599377682230">
       <screen x="0" y="0" width="1466" height="864" />
     </state>
-    <state width="0" height="0" key="GridCell.Tab.2.bottom/0.0.1466.864@0.0.1466.864" timestamp="1599233560311" />
-    <state width="0" height="0" key="GridCell.Tab.2.center" timestamp="1599233560310">
+    <state width="706" height="279" key="GridCell.Tab.2.bottom/0.0.1466.864@0.0.1466.864" timestamp="1599377682230" />
+    <state width="706" height="279" key="GridCell.Tab.2.center" timestamp="1599377682230">
       <screen x="0" y="0" width="1466" height="864" />
     </state>
-    <state width="0" height="0" key="GridCell.Tab.2.center/0.0.1466.864@0.0.1466.864" timestamp="1599233560310" />
-    <state width="0" height="0" key="GridCell.Tab.2.left" timestamp="1599233560310">
+    <state width="706" height="279" key="GridCell.Tab.2.center/0.0.1466.864@0.0.1466.864" timestamp="1599377682230" />
+    <state width="706" height="279" key="GridCell.Tab.2.left" timestamp="1599377682230">
       <screen x="0" y="0" width="1466" height="864" />
     </state>
-    <state width="0" height="0" key="GridCell.Tab.2.left/0.0.1466.864@0.0.1466.864" timestamp="1599233560310" />
-    <state width="0" height="0" key="GridCell.Tab.2.right" timestamp="1599233560311">
+    <state width="706" height="279" key="GridCell.Tab.2.left/0.0.1466.864@0.0.1466.864" timestamp="1599377682230" />
+    <state width="706" height="279" key="GridCell.Tab.2.right" timestamp="1599377682230">
       <screen x="0" y="0" width="1466" height="864" />
     </state>
-    <state width="0" height="0" key="GridCell.Tab.2.right/0.0.1466.864@0.0.1466.864" timestamp="1599233560311" />
-    <state x="220" y="166" key="IDE.errors.dialog" timestamp="1598938592539">
+    <state width="706" height="279" key="GridCell.Tab.2.right/0.0.1466.864@0.0.1466.864" timestamp="1599377682230" />
+    <state x="220" y="166" key="IDE.errors.dialog" timestamp="1599377548249">
       <screen x="0" y="0" width="1466" height="864" />
     </state>
-    <state x="220" y="166" key="IDE.errors.dialog/0.0.1466.864@0.0.1466.864" timestamp="1598938592539" />
+    <state x="220" y="166" key="IDE.errors.dialog/0.0.1466.864@0.0.1466.864" timestamp="1599377548249" />
     <state x="130" y="174" key="Maven.ArtifactSearchDialog" timestamp="1599025959016">
       <screen x="0" y="0" width="1466" height="864" />
     </state>
@@ -537,10 +551,10 @@
       <screen x="0" y="0" width="1466" height="864" />
     </state>
     <state x="268" y="172" width="931" height="641" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1466.864@0.0.1466.864" timestamp="1598937690498" />
-    <state x="432" y="164" width="601" height="536" key="find.popup" timestamp="1598939641625">
+    <state x="432" y="164" width="601" height="536" key="find.popup" timestamp="1599369581500">
       <screen x="0" y="0" width="1466" height="864" />
     </state>
-    <state x="432" y="164" width="601" height="536" key="find.popup/0.0.1466.864@0.0.1466.864" timestamp="1598939641625" />
+    <state x="432" y="164" width="601" height="536" key="find.popup/0.0.1466.864@0.0.1466.864" timestamp="1599369581500" />
     <state x="520" y="335" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1598881041825">
       <screen x="0" y="0" width="1466" height="864" />
     </state>

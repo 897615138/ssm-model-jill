@@ -1,8 +1,7 @@
 package jill.payment;
 
-import java.io.UnsupportedEncodingException;
-import java.security.NoSuchAlgorithmException;
 import java.util.List;
+import java.util.Map;
 import java.util.UUID;
 
 import org.junit.Test;
@@ -13,15 +12,15 @@ import org.springframework.stereotype.Service;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-import com.baomidou.mybatisplus.core.conditions.update.LambdaUpdateWrapper;
 import com.baomidou.mybatisplus.core.conditions.update.UpdateWrapper;
+import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 
 import jill.payment.entity.ProductInfo;
 import jill.payment.entity.UserInfo;
 import jill.payment.service.IProductInfoService;
 import jill.payment.service.IUserInfoService;
 import jill.util.exception.AppException;
-import jill.util.result.ResultCode;
 
 
 @Service
@@ -109,5 +108,15 @@ private IProductInfoService productInfoService;
         productInfo.setProDelete(0);
         boolean save = productInfoService.save(productInfo);
         System.out.println(save);
+    }
+    @Test
+    public void pageTest() throws AppException{
+//        PageHelper.startPage(2,5);
+//        List<UserInfo> list = productInfoService.getProByPage();//这个查询会分页
+//        System.out.println(list);
+//        Page<ProductInfo> page = productInfoService.page(new Page<>(2, 1));
+//        System.out.println(page);
+        Page<Map<String, Object>> mapPage = productInfoService.pageMaps(new Page<>(2, 5));
+        System.out.println(mapPage);
     }
 }
