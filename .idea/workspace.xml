@@ -14,10 +14,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="52088040-1314-4371-bde2-1784b7fe0fd3" name="默认的" comment="商品更新">
-      <change afterPath="$PROJECT_DIR$/src/main/java/jill/payment/service/impl/MyWXPayDomain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jill/payment/controller/PayController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jill/payment/controller/WXPayExample.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jill/config/MyWXPayConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jill/config/MyWXPayConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/jill/payment/SimpleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/jill/payment/SimpleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jill/config/MyWXPayConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jill/config/MyConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,6 +95,19 @@
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.Application">
+    <configuration name="WXPayExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="jill.payment.controller.WXPayExample" />
+      <module name="ssm-model-jill" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="jill.payment.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -102,22 +115,6 @@
         </value>
       </option>
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SimpleTest.checkPhone" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ssm-model-jill" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="jill.payment.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="jill.payment" />
-      <option name="MAIN_CLASS_NAME" value="jill.payment.SimpleTest" />
-      <option name="METHOD_NAME" value="checkPhone" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -263,11 +260,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SimpleTest.pageTest" />
+        <item itemvalue="应用程序.WXPayExample" />
         <item itemvalue="JUnit.SimpleTest.proUpdate" />
+        <item itemvalue="JUnit.SimpleTest.pageTest" />
         <item itemvalue="JUnit.SimpleTest.newPro" />
         <item itemvalue="JUnit.SimpleTest.login" />
-        <item itemvalue="JUnit.SimpleTest.checkPhone" />
       </list>
     </recent_temporary>
   </component>
@@ -298,6 +295,8 @@
       <workItem from="1599182651466" duration="11029000" />
       <workItem from="1599226159939" duration="6416000" />
       <workItem from="1599354533673" duration="13710000" />
+      <workItem from="1599437627887" duration="3172000" />
+      <workItem from="1599441972521" duration="2682000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1598880671242</created>
@@ -453,10 +452,10 @@
       <screen x="0" y="0" width="1466" height="864" />
     </state>
     <state x="360" y="110" key="#检查/0.0.1466.864@0.0.1466.864" timestamp="1599377658765" />
-    <state x="179" y="0" key="#项目结构" timestamp="1599369784175">
+    <state x="179" y="0" key="#项目结构" timestamp="1599439605962">
       <screen x="0" y="0" width="1466" height="864" />
     </state>
-    <state x="179" y="0" key="#项目结构/0.0.1466.864@0.0.1466.864" timestamp="1599369784175" />
+    <state x="179" y="0" key="#项目结构/0.0.1466.864@0.0.1466.864" timestamp="1599439605962" />
     <state x="517" y="179" key="FileChooserDialogImpl" timestamp="1598882688250">
       <screen x="0" y="0" width="1466" height="864" />
     </state>
@@ -469,54 +468,54 @@
       <screen x="0" y="0" width="1466" height="864" />
     </state>
     <state x="622" y="335" width="228" height="280" key="Github.ShareDialog/0.0.1466.864@0.0.1466.864" timestamp="1598881531654" />
-    <state width="706" height="279" key="GridCell.Tab.0.bottom" timestamp="1599377682229">
+    <state width="704" height="277" key="GridCell.Tab.0.bottom" timestamp="1599443580504">
       <screen x="0" y="0" width="1466" height="864" />
     </state>
-    <state width="706" height="279" key="GridCell.Tab.0.bottom/0.0.1466.864@0.0.1466.864" timestamp="1599377682229" />
-    <state width="706" height="279" key="GridCell.Tab.0.center" timestamp="1599377682229">
+    <state width="704" height="277" key="GridCell.Tab.0.bottom/0.0.1466.864@0.0.1466.864" timestamp="1599443580504" />
+    <state width="704" height="277" key="GridCell.Tab.0.center" timestamp="1599443580504">
       <screen x="0" y="0" width="1466" height="864" />
     </state>
-    <state width="706" height="279" key="GridCell.Tab.0.center/0.0.1466.864@0.0.1466.864" timestamp="1599377682229" />
-    <state width="706" height="279" key="GridCell.Tab.0.left" timestamp="1599377682228">
+    <state width="704" height="277" key="GridCell.Tab.0.center/0.0.1466.864@0.0.1466.864" timestamp="1599443580504" />
+    <state width="704" height="277" key="GridCell.Tab.0.left" timestamp="1599443580504">
       <screen x="0" y="0" width="1466" height="864" />
     </state>
-    <state width="706" height="279" key="GridCell.Tab.0.left/0.0.1466.864@0.0.1466.864" timestamp="1599377682228" />
-    <state width="706" height="279" key="GridCell.Tab.0.right" timestamp="1599377682229">
+    <state width="704" height="277" key="GridCell.Tab.0.left/0.0.1466.864@0.0.1466.864" timestamp="1599443580504" />
+    <state width="704" height="277" key="GridCell.Tab.0.right" timestamp="1599443580504">
       <screen x="0" y="0" width="1466" height="864" />
     </state>
-    <state width="706" height="279" key="GridCell.Tab.0.right/0.0.1466.864@0.0.1466.864" timestamp="1599377682229" />
-    <state width="706" height="279" key="GridCell.Tab.1.bottom" timestamp="1599377682230">
+    <state width="704" height="277" key="GridCell.Tab.0.right/0.0.1466.864@0.0.1466.864" timestamp="1599443580504" />
+    <state width="704" height="277" key="GridCell.Tab.1.bottom" timestamp="1599443580270">
       <screen x="0" y="0" width="1466" height="864" />
     </state>
-    <state width="706" height="279" key="GridCell.Tab.1.bottom/0.0.1466.864@0.0.1466.864" timestamp="1599377682230" />
-    <state width="706" height="279" key="GridCell.Tab.1.center" timestamp="1599377682229">
+    <state width="704" height="277" key="GridCell.Tab.1.bottom/0.0.1466.864@0.0.1466.864" timestamp="1599443580270" />
+    <state width="704" height="277" key="GridCell.Tab.1.center" timestamp="1599443580270">
       <screen x="0" y="0" width="1466" height="864" />
     </state>
-    <state width="706" height="279" key="GridCell.Tab.1.center/0.0.1466.864@0.0.1466.864" timestamp="1599377682229" />
-    <state width="706" height="279" key="GridCell.Tab.1.left" timestamp="1599377682229">
+    <state width="704" height="277" key="GridCell.Tab.1.center/0.0.1466.864@0.0.1466.864" timestamp="1599443580270" />
+    <state width="704" height="277" key="GridCell.Tab.1.left" timestamp="1599443580270">
       <screen x="0" y="0" width="1466" height="864" />
     </state>
-    <state width="706" height="279" key="GridCell.Tab.1.left/0.0.1466.864@0.0.1466.864" timestamp="1599377682229" />
-    <state width="706" height="279" key="GridCell.Tab.1.right" timestamp="1599377682229">
+    <state width="704" height="277" key="GridCell.Tab.1.left/0.0.1466.864@0.0.1466.864" timestamp="1599443580270" />
+    <state width="704" height="277" key="GridCell.Tab.1.right" timestamp="1599443580270">
       <screen x="0" y="0" width="1466" height="864" />
     </state>
-    <state width="706" height="279" key="GridCell.Tab.1.right/0.0.1466.864@0.0.1466.864" timestamp="1599377682229" />
-    <state width="706" height="279" key="GridCell.Tab.2.bottom" timestamp="1599377682230">
+    <state width="704" height="277" key="GridCell.Tab.1.right/0.0.1466.864@0.0.1466.864" timestamp="1599443580270" />
+    <state width="704" height="277" key="GridCell.Tab.2.bottom" timestamp="1599443580270">
       <screen x="0" y="0" width="1466" height="864" />
     </state>
-    <state width="706" height="279" key="GridCell.Tab.2.bottom/0.0.1466.864@0.0.1466.864" timestamp="1599377682230" />
-    <state width="706" height="279" key="GridCell.Tab.2.center" timestamp="1599377682230">
+    <state width="704" height="277" key="GridCell.Tab.2.bottom/0.0.1466.864@0.0.1466.864" timestamp="1599443580270" />
+    <state width="704" height="277" key="GridCell.Tab.2.center" timestamp="1599443580270">
       <screen x="0" y="0" width="1466" height="864" />
     </state>
-    <state width="706" height="279" key="GridCell.Tab.2.center/0.0.1466.864@0.0.1466.864" timestamp="1599377682230" />
-    <state width="706" height="279" key="GridCell.Tab.2.left" timestamp="1599377682230">
+    <state width="704" height="277" key="GridCell.Tab.2.center/0.0.1466.864@0.0.1466.864" timestamp="1599443580270" />
+    <state width="704" height="277" key="GridCell.Tab.2.left" timestamp="1599443580270">
       <screen x="0" y="0" width="1466" height="864" />
     </state>
-    <state width="706" height="279" key="GridCell.Tab.2.left/0.0.1466.864@0.0.1466.864" timestamp="1599377682230" />
-    <state width="706" height="279" key="GridCell.Tab.2.right" timestamp="1599377682230">
+    <state width="704" height="277" key="GridCell.Tab.2.left/0.0.1466.864@0.0.1466.864" timestamp="1599443580270" />
+    <state width="704" height="277" key="GridCell.Tab.2.right" timestamp="1599443580270">
       <screen x="0" y="0" width="1466" height="864" />
     </state>
-    <state width="706" height="279" key="GridCell.Tab.2.right/0.0.1466.864@0.0.1466.864" timestamp="1599377682230" />
+    <state width="704" height="277" key="GridCell.Tab.2.right/0.0.1466.864@0.0.1466.864" timestamp="1599443580270" />
     <state x="220" y="166" key="IDE.errors.dialog" timestamp="1599377548249">
       <screen x="0" y="0" width="1466" height="864" />
     </state>

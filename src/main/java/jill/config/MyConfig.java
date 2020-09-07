@@ -6,7 +6,7 @@ import jill.payment.service.impl.MyWXPayDomain;
 import jill.wxpay.sdk.IWXPayDomain;
 import jill.wxpay.sdk.WXPayConfig;
 
-public class MyWXPayConfig extends WXPayConfig {
+public class MyConfig extends WXPayConfig {
     /**
      * 获取 App ID
      *
